@@ -1,0 +1,19 @@
+extend default
+
+block content
+  p.
+    Enter an ip address (or comma separated list of ip addresses) to get their hex values.
+
+  label ip address: 
+  input#ipInput
+  
+  div
+    button(onclick='convertToHex()') Convert To Hex
+
+  // Add a field to display the result of the conversion
+
+  script.
+    var convertToHex = function() {
+        console.log(document.getElementById('ipInput').value);
+        // Implement logic for the conversion
+    }
